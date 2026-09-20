@@ -1,0 +1,22 @@
+# CPU-only PyTorch build — this project trains a small MLP policy and never
+# needs a GPU. Without this, pip pulls several GB of unused CUDA libraries.
+--index-url https://download.pytorch.org/whl/cpu
+--extra-index-url https://pypi.org/simple
+
+torch
+numpy
+pandas
+matplotlib
+gymnasium
+gym_anytrading
+stable-baselines3[extra]
+yfinance
+alpha_vantage==2.3.1  # newer versions removed the module alpaca-trade-api imports internally
+alpaca-trade-api
+ta
+scikit-learn
+scipy
+mlflow
+pydantic-settings
+python-dotenv
+pytest

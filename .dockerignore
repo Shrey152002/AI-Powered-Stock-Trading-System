@@ -1,0 +1,13 @@
+.git
+.github
+mlruns/
+mlartifacts/
+models/*.zip
+data/cache/*.csv
+reports/*.png
+logs/*.log
+tests/
+stocks_trading.ipynb
+.env
+__pycache__/
+*.pyc
